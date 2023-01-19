@@ -15,3 +15,8 @@ $ yo yeoman-react
 
 ## 01 - Changes
 1. Prompts
+2. Run Sub Generator
+```shell
+$ yo yeoman-react:router
+```
+3. 
