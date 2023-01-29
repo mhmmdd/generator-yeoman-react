@@ -19,4 +19,34 @@ $ yo yeoman-react
 ```shell
 $ yo yeoman-react:router
 ```
-3. 
+3. Debugging
+````shell
+$ which yo
+# C:\Users\Ba\AppData\Roaming\npm\yo
+$ node --inspect C:\Users\Ba\AppData\Roaming\npm\node_modules\yo\lib\cli.js yeoman-react
+#$ jhipster --blueprints react-native jdl online-shop.jh
+````
+
+Yeoman queues
+```js
+static get queues() {
+  return [
+    'initializing',
+    'prompting',
+    'configuring',
+    'default',
+    'writing',
+    'transform',
+    'conflicts',
+    'install',
+    'end'
+  ];
+}
+```
+```shell
+$ npm install -g nodemon
+#https://stackoverflow.com/a/4475095
+$ npm install --save @types/node
+
+#yeoman-environment -> Generator -> runLoop (GroupedQueue)
+```

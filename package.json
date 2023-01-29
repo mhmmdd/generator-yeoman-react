@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start_inspect": "set DEBUG=yeoman:generator && nodemon --inspect --inspect-brk C:\\Users\\Ba\\AppData\\Roaming\\npm\\node_modules\\yo\\lib\\cli.js yeoman-react"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^18.11.18",
+    "grouped-queue": "^2.0.0",
     "yeoman-generator": "^5.7.0"
   }
 }
