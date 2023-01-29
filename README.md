@@ -10,6 +10,7 @@ $ npm install -g yo
 
 ## Run the generator
 ```shell
+$ yo --generators
 $ yo yeoman-react
 ```
 
@@ -49,4 +50,17 @@ $ npm install -g nodemon
 $ npm install --save @types/node
 
 #yeoman-environment -> Generator -> runLoop (GroupedQueue)
+```
+
+## For "generator-jhipster-react-native" blueprint
+```shell
+# https://github.com/jhipster/jdl-samples
+
+$ cd example-react-native
+$ jhipster --blueprints react-native jdl ./blog.jdl --ignore-application
+
+$ which jhipster
+# C:\Users\Ba\AppData\Roaming\npm\jhipster
+$ set DEBUG=yeoman:generator && nodemon --inspect --inspect-brk C:\Users\Ba\AppData\Roaming\npm\node_modules\generator-jhipster\cli\jhipster.js --blueprints react-native jdl ./blog.jdl 
+
 ```
